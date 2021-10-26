@@ -1,0 +1,19 @@
+captainVersion: 4
+services:
+  $$cap_appname:
+    image: damage_calc
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - config.env      
+    caproverExtra:
+      containerHttpPort: '3000'
+caproverOneClickApp:
+    instructions:
+        end: 'Server Started.'
+        start: 'Starting Install...'
+    displayName: DamageCalculator
+    isOfficial: false
+    description: A simple finance tracker for people who "aint got no time fo' dat" ok_hand
+    documentation: https://github.com/mowglixx/DamageCalculator
