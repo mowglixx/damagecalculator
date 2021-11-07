@@ -7,12 +7,12 @@ npm i -g yarn
 yarn && yarn dev
 ```
 
-```json
+```js
 scipts: {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "docker": "docker-compose up -d",
-    "dockerAttach": "docker-compose up"
+    dev: "next dev",
+    build: "next build",
+    start: "next start",
+    docker: "docker-compose up -d",
+    dockerAttach: "docker-compose up"
     }
 ```
