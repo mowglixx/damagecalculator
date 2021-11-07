@@ -15,5 +15,5 @@ caproverOneClickApp:
         start: 'Starting Install...'
     displayName: DamageCalculator
     isOfficial: false
-    description: A simple finance tracker for people who "aint got no time fo' dat" ok_hand
-    documentation: https://github.com/mowglixx/DamageCalculator
+    description: A simple finance tracker for people who "aint got no time fo' dat" ok_hand written in `TypeScript` with `Next.js`
+    documentation: https://github.com/mowglixx/damage-calculator-nextjs
