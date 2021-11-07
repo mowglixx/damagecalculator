@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "docker": "docker-compose up -d",
+    "dockerAttach": "docker-compose up"
   },
   "dependencies": {
     "next": "latest",
