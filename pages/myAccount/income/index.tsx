@@ -1,19 +1,22 @@
-import { useEffect } from "react";
+import { useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import Button from '../../../components/Button'
+
+const addIncome = () => {
+    console.warn('yay!')
+}
 
 const IncomePage = () => {
-
-    const addIncome = () => {
-        console.log('boop')
-    };
-
 
     return (
         <div className="absolute p-20">
             <p className="mt-5">Income</p>
-            <button {...addIncome()}
-            >
-                Add an income
-            </button>
+            <Button
+                name="addIncomeButton"
+                onClick={addIncome}
+                color={'warning'}
+                size
+            >{'Add an income'}</Button>
         </div>
     )
 }
