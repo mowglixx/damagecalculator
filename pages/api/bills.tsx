@@ -1,3 +1,5 @@
+
+// replace this function with real data function
 const exampleBills: Bills = [
     {
         name: 'TalkTalk',
