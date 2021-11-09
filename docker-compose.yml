@@ -1,11 +1,10 @@
 captainVersion: 4
 services:
-  app:
-    image: damage_calc
+  damcalc:
     build:
       context: .
       dockerfile: ./Dockerfile
     env_file:
-      - config.env      
+      - config.env
     ports:
       - 3000:3000
