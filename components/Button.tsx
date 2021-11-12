@@ -1,37 +1,45 @@
-import React, { Children } from 'react'
+import React, { ReactChildren } from 'react';
+import { Children } from 'react';
 
-export type buttonColor = [
-    'primary',
-    'secondary',
-    'success',
-    'info',
-    'warning',
-    'danger']
-
-export type Button = {
+export type ButtonProps = {
     name?: String,
     onClick?: Function,
-    color?: buttonColor,
-    size: String
+    color?: String,
+    size?: String,
+    children: JSX.Element
+};
+
+export const ButtonColor = color => {
+    const ButtonColors = [
+        'primary',
+        'secondary',
+        'success',
+        'info',
+        'warning',
+        'danger'
+    ]
+    // if color is in ButtonColors array return color else return primary color
+    ButtonColors.includes(color) ? color : 'primary'
 }
 
+export type ButtonSizes = ['sm', 'md', 'lg']
 
-export const Button = ({ name, onClick, color, size, children }) => {
+export const Button = ({
+    name = 'New Button',
+    onClick = () => { },
+    color = 'primary',
+    size = 'md',
+    children }) => {
 
 
     return (
         <>
-            <button
+            <button className={
+                `btn ${ButtonColor(color)} ${size}`
+            }
                 name={name}
-                id={name}
-                onClick={onClick}
-                className={`btn-${color
-                        ? color
-                        : '-primary'}` + `${size
-                            ? size
-                            : '-md'}`}>
-                {children}
-            </button>
+                onClick={onClick}>
+                {children} </button>
         </>
     )
 }

@@ -13,19 +13,20 @@ A simple finance tracker for people who "aint got no time fo' dat" :ok_hand: wri
 ## How to run
 
 ### Quick Start
+
 Install yarn
 [Help Installing Yarn](https://classic.yarnpkg.com/en/docs/install#alternatives-stable)
 
-```
-cd ~/damage-calculator-nextjs
-yarn
-yarn dev
+```bash
+npm i -g yarn
+yarn && yarn dev
 ```
 
 ## Scripts
+
 ```js
 // from package.json
-scipts: { // yarn run ...
+scipts: { // yarn/npm run ...
     dev: "next dev",
     // non working scripts below here
     build: "next build",
@@ -36,34 +37,39 @@ scipts: { // yarn run ...
 ```
 
 ### run the dev environment
+
 ```sh
 yarn dev
-# (currently working kinda)
 ```
+
 ### run the production server
+
 ```sh
 yarn build
 yarn start
-# (coming soon)
+## (coming soon, not even close to ready) ##
 ```
-### Docker Compose
-#### Attached
+
+### Docker
+
 ```sh
-yarn run dockerAttached
-# Needs Dockerfile currently
-```
-#### Detached / Headless
-```sh
+# Needs Dockerfile to be configured
 yarn run docker
-# Needs Dockerfile currently
+
+## or run attached if you use a detachable terminal like tmux/screen
+yarn run dockerAttached
 ```
 
 ## A note on Yarn
-*Yarn is optional and you can run all the commands by replacing*
+
+_Yarn is optional and you can run all the commands by replacing_
+
 ```
 yarn run [script]
 ```
-*with*
+
+_with_
+
 ```
 npm run [script]
 ```

@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
 
 // main fuction that builds page with tailwind
 // a "window" if you will into the page contents
