@@ -23,11 +23,9 @@
     @apply mb-2;
   }
 }
+
 .row {
   @apply padding;
-}
-.col {
-  @apply h-full shadow-inner;
 }
 
 .dark {
@@ -81,7 +79,7 @@ code {
   @apply padding border-b-2 dark:border-yellow-200 text-lg;
 }
 .card-body {
-  @apply padding;
+  @apply text-white dark:text-yellow-200;
 }
 .card-footer {
   @apply padding border-t-2 bg-white dark:bg-gray-800 dark:border-yellow-200;
@@ -131,4 +129,16 @@ button.sm {
   @apply hover:bg-white hover:text-red-500;
   @apply dark:bg-gray-800 dark:text-red-500 dark:border-red-500;
   @apply dark:hover:bg-red-500 dark:hover:text-white;
+}
+
+input.loginInput {
+  @apply min-w-fit p-4 focus:text-green-500 font-bold;
+  @apply m-4 border-2 text-gray-600 dark:dark dark:text-white border-solid dark:border-white;
+  @apply transition-all;
+}
+input.loginInput::placeholder {
+  @apply dark:text-yellow-200;
+}
+label{
+  @apply p-0
 }

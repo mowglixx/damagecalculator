@@ -3,7 +3,7 @@ import { Children } from 'react';
 
 export type ButtonProps = {
     name?: String,
-    onClick?: Function,
+    onClick?: VoidFunction,
     color?: String,
     size?: String,
     children: JSX.Element
@@ -13,26 +13,26 @@ export type ButtonProps = {
 
 export type ButtonSizes = ['sm', 'md', 'lg']
 
-export const Button= ({
+export const Button = ({
     name = 'New Button',
     onClick = () => { },
     color = 'primary',
     size = 'md',
     children }) => {
-        const ButtonColor = color => { // validates color selection
-            const ButtonColors = [
-                'primary',
-                'secondary',
-                'success',
-                'info',
-                'warning',
-                'danger'
-            ]
-            // if ButtonColors includes `color` 
-            //  - return color 
-            //  - else: `primary`
-            ButtonColors.includes(color) ? color : 'primary'
-        }
+    const ButtonColor = color => { // validates color selection
+        const ButtonColors = [
+            'primary',
+            'secondary',
+            'success',
+            'info',
+            'warning',
+            'danger'
+        ]
+        // if ButtonColors includes `color` 
+        //  - return color 
+        //  - else: `primary`
+        ButtonColors.includes(color) ? color : 'primary'
+    }
 
     return (
         <>

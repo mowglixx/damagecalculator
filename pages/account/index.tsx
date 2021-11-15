@@ -1,7 +1,7 @@
 function index() {
     return (
         <div>
-            
+            Account Page
         </div>
     )
 }
