@@ -15,7 +15,6 @@ const IncomePage = () => {
                 name="addIncomeButton"
                 onClick={addIncome}
                 color={'warning'}
-                size
             >{'Add an income'}</Button>
         </div>
     )
