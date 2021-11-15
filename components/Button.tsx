@@ -9,7 +9,7 @@ export type ButtonProps = {
     children: JSX.Element
 };
 
-export const ButtonColor = color => {
+export const ButtonColor = color => { // validates color selection
     const ButtonColors = [
         'primary',
         'secondary',
@@ -18,7 +18,9 @@ export const ButtonColor = color => {
         'warning',
         'danger'
     ]
-    // if color is in ButtonColors array return color else return primary color
+    // if ButtonColors includes `color` 
+    //  - return color 
+    //  - else: `primary`
     ButtonColors.includes(color) ? color : 'primary'
 }
 
@@ -34,9 +36,7 @@ export const Button = ({
 
     return (
         <>
-            <button className={
-                `btn ${ButtonColor(color)} ${size}`
-            }
+            <button className={`${color} ${size}`}
                 name={name}
                 onClick={onClick}>
                 {children} </button>

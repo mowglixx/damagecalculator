@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Button from '../../components/Button'
-import Footer from '../footer'
+import Footer from '../../components/Footer'
 
 export default function Home() {
     return (
@@ -16,11 +16,17 @@ export default function Home() {
                                 <label htmlFor="username">
                                     <input name="username" id="username" className="padding" placeholder="username" />
                                 </label>
-
+                                <label htmlFor="password">
+                                    <input name="password" id="password" className="padding" placeholder="password" />
+                                </label>
+                                <label htmlFor="login">
                                 <Button name="login"
                                     color='success'
                                     size="small">Wow
                                 </Button>
+                                </label>
+
+
                             </form>
                         </div>
                         <div className="card-footer">
