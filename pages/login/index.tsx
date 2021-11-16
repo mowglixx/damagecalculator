@@ -1,21 +1,20 @@
-import Link from 'next/link'
 import Button from '../../components/Button'
-import Footer from '../../components/Footer'
+import React from 'react'
+import { useRouter } from 'next/dist/client/router';
 
-export default function Home() {
+export default function Login(pageProps) {
+
+    const router = useRouter();
+
+    console.log(router.route)
+
     return (
         <>
-            <div className="flex flex-col items-center justify-center min-h-screen py-2">
-                <Link href="/">
-                    <a>
-                        Home
-                    </a>
-                </Link>
-                <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+            <div className="flex flex-col items-center justify-center min-h-screen py-2 -translate-y-32">
                     <div className="card">
                         <div className="card-header">Login</div>
                         <div className="card-body">
-                            <form name="login-form" id="login-form">
+                        <form method="post" name="login-form" id="login-form">
                                 <div className="row">
                                     <input name="username" id="username" className="loginInput" placeholder="Username" title="GiBe Usernems" />
                                 </div>
@@ -23,19 +22,15 @@ export default function Home() {
                                     <input name="password" id="password" className="loginInput" placeholder="Password" type="password" title="GiBe Pa$$word" />
                                 </div>
                                 <div>
-                                    <Button name="login"
-                                        color='success'
-                                        size="small">Login
-                                    </Button>
+                                <button name="login"
+                                    className='success'>Login
+                                </button>
                                 </div>
-
+                            {console.log('%o', pageProps)}
 
                             </form>
                         </div>
-                    </div>
-                </main>
-
-                <Footer />
+                </div>
             </div>
         </>
     )

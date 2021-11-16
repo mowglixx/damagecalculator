@@ -4,18 +4,12 @@ const addIncome = () => {
     console.warn('yay!')
 }
 
-const IncomePage = () => {
+const createUserPage = () => {
 
     return (
-        <div className="absolute p-20">
-            <p className="mt-5">Income</p>
-            <Button
-                name="addIncomeButton"
-                onClick={addIncome}
-                color={'warning'}
-            >Create User</Button>
-        </div>
+        <>
+            Income Page
+        </>
     )
 }
-
-export default IncomePage
+export default createUserPage;

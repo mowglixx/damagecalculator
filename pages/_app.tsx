@@ -1,11 +1,17 @@
 import '../styles/globals.css'
+import Nav from '../components/Nav'
 import React, { Component } from 'react'
+import Footer from '../components/Footer'
 
 // main fuction that builds page with tailwind
 // a "window" if you will into the page contents
-function MyApp({ Component, pageProps }): JSX.Element {
+export const MyApp = ({ Component, pageProps }): JSX.Element => {
 
-  return <Component {...pageProps} />
+  return <>
+    <Nav />
+    <Component {...pageProps} />
+    <Footer />
+  </>
 }
 
 export default MyApp
