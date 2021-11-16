@@ -8,7 +8,7 @@ const createUserPage = () => {
 
     return (
         <>
-            Income Page
+            Add User Page
         </>
     )
 }

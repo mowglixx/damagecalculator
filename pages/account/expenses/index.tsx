@@ -1,9 +1,9 @@
-function index() {
+export const Expenses = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            Expenses
+        </>
     )
 }
 
-export default index
+export default Expenses
