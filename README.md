@@ -8,7 +8,7 @@ A simple finance tracker for people who "aint got no time fo' dat" :ok_hand: wri
 
 ---
 
-[Github](https://github.com/mowglixx/damage-calculator-nextjs)
+[Github](https://github.com/mowglixx/damage-calculator)
 
 ## How to run
 
