@@ -4,7 +4,7 @@ import { LightBulbIcon } from '@heroicons/react/solid'
 
 export const Footer = () => {
   const [darkMode, setDarkMode] = useState(true);
-  let setDarkmode = useEffect(() => {
+  const setDarkmode = useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark");
     } else {
